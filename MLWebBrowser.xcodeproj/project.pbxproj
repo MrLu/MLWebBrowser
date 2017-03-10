@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4F0010BB395C5D8C9EB95E /* Pods_MLWebBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F8C910DDB79983C7F55782 /* Pods_MLWebBrowser.framework */; };
 		8A4897C81E6695EE0049B94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4897C71E6695EE0049B94B /* AppDelegate.swift */; };
 		8A4897CA1E6695EE0049B94B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4897C91E6695EE0049B94B /* MainViewController.swift */; };
 		8A4897CF1E6695EE0049B94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4897CE1E6695EE0049B94B /* Assets.xcassets */; };
@@ -17,15 +18,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31230D8926C27E88E02AB863 /* Pods-MLWebBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLWebBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLWebBrowser/Pods-MLWebBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		8A4897C41E6695EE0049B94B /* MLWebBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLWebBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4897C71E6695EE0049B94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4897C91E6695EE0049B94B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MLWebBrowser/Main/MainViewController.swift; sourceTree = SOURCE_ROOT; };
-		8A4897CE1E6695EE0049B94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A4897CE1E6695EE0049B94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		8A4897D11E6695EE0049B94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4897D31E6695EE0049B94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ADEF8F91E7150B700903F2B /* BrowserContainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserContainViewController.swift; sourceTree = "<group>"; };
 		8ADEF8FD1E71585900903F2B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8ADEF9001E71597200903F2B /* YYLoadProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLoadProgressView.swift; sourceTree = "<group>"; };
+		B9F8C910DDB79983C7F55782 /* Pods_MLWebBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MLWebBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE40E387F626691F811BA7C /* Pods-MLWebBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLWebBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLWebBrowser/Pods-MLWebBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4F0010BB395C5D8C9EB95E /* Pods_MLWebBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C67253BE87FC8396B4CA0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F8C910DDB79983C7F55782 /* Pods_MLWebBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A4897BB1E6695EE0049B94B = {
 			isa = PBXGroup;
 			children = (
 				8A4897C61E6695EE0049B94B /* MLWebBrowser */,
 				8A4897C51E6695EE0049B94B /* Products */,
+				ED8D1AB2AB12C656EDAAD3F7 /* Pods */,
+				21C67253BE87FC8396B4CA0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +79,6 @@
 				8ADEF8F51E714FE700903F2B /* Resources */,
 				8ADEF8F61E714FE700903F2B /* Vender */,
 				8A4897C71E6695EE0049B94B /* AppDelegate.swift */,
-				8A4897CE1E6695EE0049B94B /* Assets.xcassets */,
-				8A4897D01E6695EE0049B94B /* LaunchScreen.storyboard */,
 				8A4897D31E6695EE0049B94B /* Info.plist */,
 			);
 			path = MLWebBrowser;
@@ -98,6 +111,8 @@
 		8ADEF8F51E714FE700903F2B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A4897CE1E6695EE0049B94B /* Assets.xcassets */,
+				8A4897D01E6695EE0049B94B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -150,6 +165,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		ED8D1AB2AB12C656EDAAD3F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31230D8926C27E88E02AB863 /* Pods-MLWebBrowser.debug.xcconfig */,
+				ECE40E387F626691F811BA7C /* Pods-MLWebBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A4897D61E6695EE0049B94B /* Build configuration list for PBXNativeTarget "MLWebBrowser" */;
 			buildPhases = (
+				51A8522EBF307081F81F2F26 /* [CP] Check Pods Manifest.lock */,
 				8A4897C01E6695EE0049B94B /* Sources */,
 				8A4897C11E6695EE0049B94B /* Frameworks */,
 				8A4897C21E6695EE0049B94B /* Resources */,
+				5FE03DA6E38F4C6E3387A831 /* [CP] Embed Pods Frameworks */,
+				0C94481639A085EAEF96CA0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +244,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C94481639A085EAEF96CA0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLWebBrowser/Pods-MLWebBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51A8522EBF307081F81F2F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE03DA6E38F4C6E3387A831 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLWebBrowser/Pods-MLWebBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A4897C01E6695EE0049B94B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -239,6 +314,7 @@
 				8A4897D11E6695EE0049B94B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,6 +413,7 @@
 		};
 		8A4897D71E6695EE0049B94B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31230D8926C27E88E02AB863 /* Pods-MLWebBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GD377ZQP64;
@@ -350,6 +427,7 @@
 		};
 		8A4897D81E6695EE0049B94B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE40E387F626691F811BA7C /* Pods-MLWebBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GD377ZQP64;

@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (4.0.1)
+  - APIKit (3.1.1):
+    - Result (~> 3.0)
+  - Kingfisher (3.1.4)
+  - ObjectMapper (2.0.0)
+  - Result (3.2.1)
+  - SnapKit (3.0.2)
+  - SwiftyJSON (3.1.4)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.0)
+  - APIKit (~> 3.0)
+  - Kingfisher (~> 3.1.0)
+  - ObjectMapper (~> 2.0.0)
+  - SnapKit (~> 3.0.1)
+  - SwiftyJSON (~> 3.1.0)
+  - XCGLogger (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
+  Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+
+PODFILE CHECKSUM: 533e4d929df3feb20c4e41f1917d2f105d2e2b33
+
+COCOAPODS: 1.1.1
