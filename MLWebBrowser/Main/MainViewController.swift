@@ -11,7 +11,7 @@ import SnapKit
 
 class MainSearchControl: UIView {
     
-    lazy var searchBar:UIView = {
+    lazy var searchBar:UITextField = {
         var textField = UITextField()
         textField.placeholder = "搜索或输入网址"
         textField.font = UIFont.systemFont(ofSize: 15)
@@ -43,14 +43,15 @@ class MainSearchControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
 
 
-class MainViewController: UIViewController,UIScrollViewDelegate {
+class MainViewController: UIViewController,UIScrollViewDelegate,UITextFieldDelegate {
     
     lazy var searchBar:MainSearchControl = {
         var searchBar = MainSearchControl()
+        searchBar.searchBar.delegate = self;
         return searchBar
     }();
     
@@ -70,14 +71,21 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
     
     lazy var headView:UIView = {
         var headView = UIView()
-        var logoView = UIImageView(image: #imageLiteral(resourceName: "logo"))
-        headView.addSubview(#imageLiteral(resourceName: "logo"))
+        headView.addSubview(self.searchBar)
+
+        self.searchBar.snp.makeConstraints { (maker) in
+            maker.left.equalTo(30)
+            maker.right.equalTo(-30)
+            maker.bottom.equalTo(0)
+            maker.height.equalTo(50)
+        }
         return headView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         setupView()
     }
     
@@ -85,9 +93,9 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
         view.backgroundColor = UIColor.white
         view.addSubview(scrollView)
         scrollView.addSubview(container)
-
+        
         container.addSubview(headView)
-        headView.addSubview(searchBar)
+        
         
         container.snp.makeConstraints { (make) in
             make.edges.equalTo(scrollView)
@@ -101,22 +109,27 @@ class MainViewController: UIViewController,UIScrollViewDelegate {
             maker.top.equalTo(0)
             maker.height.equalTo(300)
         }
-        
-        searchBar.snp.makeConstraints { (maker) in
-            maker.left.equalTo(30)
-            maker.right.equalTo(-30)
-            maker.bottom.equalTo(0)
-            maker.height.equalTo(50)
-        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: - UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
+    }
+    
+    //MARK: - UITextFieldViewDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if ((textField.text) != nil) {
+            view.endEditing(true)
+            let browserContainVC = BrowserContainViewController()
+            browserContainVC.searchContent = textField.text
+            self.navigationController?.pushViewController(browserContainVC, animated: true)
+        }
+        return true
     }
 }
 

@@ -12,6 +12,8 @@
 		8A4897CA1E6695EE0049B94B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4897C91E6695EE0049B94B /* MainViewController.swift */; };
 		8A4897CF1E6695EE0049B94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4897CE1E6695EE0049B94B /* Assets.xcassets */; };
 		8A4897D21E6695EE0049B94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4897D01E6695EE0049B94B /* LaunchScreen.storyboard */; };
+		8A679DA21E77C52F00D0EDDC /* MMNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A679DA11E77C52F00D0EDDC /* MMNavViewController.swift */; };
+		8A6D98041E77E7EC009B1712 /* SearchEngineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */; };
 		8ADEF8FA1E7150B700903F2B /* BrowserContainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF8F91E7150B700903F2B /* BrowserContainViewController.swift */; };
 		8ADEF8FE1E71585900903F2B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF8FD1E71585900903F2B /* WebViewController.swift */; };
 		8ADEF9011E71597200903F2B /* YYLoadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF9001E71597200903F2B /* YYLoadProgressView.swift */; };
@@ -25,6 +27,8 @@
 		8A4897CE1E6695EE0049B94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		8A4897D11E6695EE0049B94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4897D31E6695EE0049B94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A679DA11E77C52F00D0EDDC /* MMNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNavViewController.swift; sourceTree = "<group>"; };
+		8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEngineManager.swift; sourceTree = "<group>"; };
 		8ADEF8F91E7150B700903F2B /* BrowserContainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserContainViewController.swift; sourceTree = "<group>"; };
 		8ADEF8FD1E71585900903F2B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8ADEF9001E71597200903F2B /* YYLoadProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLoadProgressView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8ADEF8FF1E71596A00903F2B /* View */,
+				8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		8ADEF8F31E714FE700903F2B /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				8A679DA11E77C52F00D0EDDC /* MMNavViewController.swift */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -299,6 +305,8 @@
 			files = (
 				8A4897CA1E6695EE0049B94B /* MainViewController.swift in Sources */,
 				8ADEF8FA1E7150B700903F2B /* BrowserContainViewController.swift in Sources */,
+				8A679DA21E77C52F00D0EDDC /* MMNavViewController.swift in Sources */,
+				8A6D98041E77E7EC009B1712 /* SearchEngineManager.swift in Sources */,
 				8ADEF9011E71597200903F2B /* YYLoadProgressView.swift in Sources */,
 				8A4897C81E6695EE0049B94B /* AppDelegate.swift in Sources */,
 				8ADEF8FE1E71585900903F2B /* WebViewController.swift in Sources */,
