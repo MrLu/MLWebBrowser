@@ -14,6 +14,7 @@
 		8A4897D21E6695EE0049B94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4897D01E6695EE0049B94B /* LaunchScreen.storyboard */; };
 		8A679DA21E77C52F00D0EDDC /* MMNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A679DA11E77C52F00D0EDDC /* MMNavViewController.swift */; };
 		8A6D98041E77E7EC009B1712 /* SearchEngineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */; };
+		8A7E4F171E7A7A6F00A1540A /* String+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7E4F161E7A7A6F00A1540A /* String+util.swift */; };
 		8ADEF8FA1E7150B700903F2B /* BrowserContainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF8F91E7150B700903F2B /* BrowserContainViewController.swift */; };
 		8ADEF8FE1E71585900903F2B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF8FD1E71585900903F2B /* WebViewController.swift */; };
 		8ADEF9011E71597200903F2B /* YYLoadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADEF9001E71597200903F2B /* YYLoadProgressView.swift */; };
@@ -29,6 +30,8 @@
 		8A4897D31E6695EE0049B94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A679DA11E77C52F00D0EDDC /* MMNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMNavViewController.swift; sourceTree = "<group>"; };
 		8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEngineManager.swift; sourceTree = "<group>"; };
+		8A7E4F161E7A7A6F00A1540A /* String+util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+util.swift"; sourceTree = "<group>"; };
+		8ABF52341E7A70F000B9D367 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		8ADEF8F91E7150B700903F2B /* BrowserContainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserContainViewController.swift; sourceTree = "<group>"; };
 		8ADEF8FD1E71585900903F2B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8ADEF9001E71597200903F2B /* YYLoadProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLoadProgressView.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 		8A4897BB1E6695EE0049B94B = {
 			isa = PBXGroup;
 			children = (
+				8ABF52341E7A70F000B9D367 /* MyPlayground.playground */,
 				8A4897C61E6695EE0049B94B /* MLWebBrowser */,
 				8A4897C51E6695EE0049B94B /* Products */,
 				ED8D1AB2AB12C656EDAAD3F7 /* Pods */,
@@ -93,6 +97,7 @@
 			children = (
 				8ADEF8FF1E71596A00903F2B /* View */,
 				8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */,
+				8A7E4F161E7A7A6F00A1540A /* String+util.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				8ADEF8FA1E7150B700903F2B /* BrowserContainViewController.swift in Sources */,
 				8A679DA21E77C52F00D0EDDC /* MMNavViewController.swift in Sources */,
 				8A6D98041E77E7EC009B1712 /* SearchEngineManager.swift in Sources */,
+				8A7E4F171E7A7A6F00A1540A /* String+util.swift in Sources */,
 				8ADEF9011E71597200903F2B /* YYLoadProgressView.swift in Sources */,
 				8A4897C81E6695EE0049B94B /* AppDelegate.swift in Sources */,
 				8ADEF8FE1E71585900903F2B /* WebViewController.swift in Sources */,

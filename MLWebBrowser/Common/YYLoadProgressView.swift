@@ -109,10 +109,11 @@ class YYLoadProgressView: UIView {
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
-        let newSuperview = superview
-        if newSuperview != nil {
-            let superCenter:CGPoint = CGPoint(x: newSuperview!.frame.midX, y: newSuperview!.frame.midY)
-            self.center = superCenter
+        let superView = superview
+        if superview != nil {
+            self.snp.makeConstraints { (maker) in
+                maker.center.equalTo(superView!.snp.center);
+            }
         }
     }
     

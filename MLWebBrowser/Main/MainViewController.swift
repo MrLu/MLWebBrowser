@@ -126,7 +126,7 @@ class MainViewController: UIViewController,UIScrollViewDelegate,UITextFieldDeleg
         if ((textField.text) != nil) {
             view.endEditing(true)
             let browserContainVC = BrowserContainViewController()
-            browserContainVC.searchContent = textField.text
+            browserContainVC.searchContent = textField.text;
             self.navigationController?.pushViewController(browserContainVC, animated: true)
         }
         return true

@@ -29,7 +29,7 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         return loadProgressView
     }()
     
-    var url:NSURL?
+    var url:URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     
     func loadViewData() {
         if url != nil {
-            webView.load(URLRequest(url: url! as URL))
+            webView.load(URLRequest(url: url!))
         }
     }
     
@@ -88,4 +88,8 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         loadingView.stopAnimating()
     }
+    
+//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
+//        
+//    }
 }
