@@ -77,7 +77,28 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
     //        }
     //    }
     
+    //MARK: - WKNavigationDelegate
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        decisionHandler(.allow)
+    }
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        decisionHandler(.allow)
+    }
+    
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         loadingView.startAnimating()
     }
     
@@ -89,7 +110,11 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         loadingView.stopAnimating()
     }
     
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Swift.Void) {
+//    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
 //        
 //    }
+    
+    func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+        
+    }
 }

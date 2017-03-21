@@ -4,6 +4,11 @@ PODS:
     - Result (~> 3.0)
   - Kingfisher (3.1.4)
   - ObjectMapper (2.0.0)
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmSwift (2.4.4):
+    - Realm (= 2.4.4)
   - Result (3.2.1)
   - SnapKit (3.0.2)
   - SwiftyJSON (3.1.4)
@@ -16,6 +21,7 @@ DEPENDENCIES:
   - APIKit (~> 3.0)
   - Kingfisher (~> 3.1.0)
   - ObjectMapper (~> 2.0.0)
+  - RealmSwift
   - SnapKit (~> 3.0.1)
   - SwiftyJSON (~> 3.1.0)
   - XCGLogger (~> 4.0.0)
@@ -25,11 +31,13 @@ SPEC CHECKSUMS:
   APIKit: 7460983f490d3bde6aaaaa4164d18c9865a6f91d
   Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
   Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 533e4d929df3feb20c4e41f1917d2f105d2e2b33
+PODFILE CHECKSUM: 34f42092d446ae0c2ffcfdc9d17c869167b13553
 
 COCOAPODS: 1.1.1
