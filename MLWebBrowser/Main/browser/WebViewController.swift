@@ -15,11 +15,12 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         return nil
     }()
     
-    lazy var webView:WKWebView = {
-        let webView = WKWebView(frame: self.view.bounds)
+    lazy var webView:MLBWebView = {
+        let webView = MLBWebView(frame: self.view.bounds)
         webView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         webView.navigationDelegate = self
         webView.uiDelegate = self
+        webView.allowsBackForwardNavigationGestures = true;
         return webView
     }()
     

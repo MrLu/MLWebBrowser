@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F4F0010BB395C5D8C9EB95E /* Pods_MLWebBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F8C910DDB79983C7F55782 /* Pods_MLWebBrowser.framework */; };
+		8A0197E11E95D8A8008B7964 /* NSObject+runtimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0197E01E95D8A8008B7964 /* NSObject+runtimeHelper.swift */; };
+		8A0197E31E9616FB008B7964 /* MLBWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0197E21E9616FB008B7964 /* MLBWebView.swift */; };
 		8A4897C81E6695EE0049B94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4897C71E6695EE0049B94B /* AppDelegate.swift */; };
 		8A4897CA1E6695EE0049B94B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4897C91E6695EE0049B94B /* MainViewController.swift */; };
 		8A4897CF1E6695EE0049B94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4897CE1E6695EE0049B94B /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		31230D8926C27E88E02AB863 /* Pods-MLWebBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLWebBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLWebBrowser/Pods-MLWebBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0197E01E95D8A8008B7964 /* NSObject+runtimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+runtimeHelper.swift"; sourceTree = "<group>"; };
+		8A0197E21E9616FB008B7964 /* MLBWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLBWebView.swift; sourceTree = "<group>"; };
 		8A4897C41E6695EE0049B94B /* MLWebBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLWebBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4897C71E6695EE0049B94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4897C91E6695EE0049B94B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MLWebBrowser/Main/MainViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -98,6 +102,7 @@
 				8ADEF8FF1E71596A00903F2B /* View */,
 				8A6D98031E77E7EC009B1712 /* SearchEngineManager.swift */,
 				8A7E4F161E7A7A6F00A1540A /* String+util.swift */,
+				8A0197E01E95D8A8008B7964 /* NSObject+runtimeHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		8ADEF8FB1E71581300903F2B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8A0197E21E9616FB008B7964 /* MLBWebView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -311,7 +317,9 @@
 				8A4897CA1E6695EE0049B94B /* MainViewController.swift in Sources */,
 				8ADEF8FA1E7150B700903F2B /* BrowserContainViewController.swift in Sources */,
 				8A679DA21E77C52F00D0EDDC /* MMNavViewController.swift in Sources */,
+				8A0197E11E95D8A8008B7964 /* NSObject+runtimeHelper.swift in Sources */,
 				8A6D98041E77E7EC009B1712 /* SearchEngineManager.swift in Sources */,
+				8A0197E31E9616FB008B7964 /* MLBWebView.swift in Sources */,
 				8A7E4F171E7A7A6F00A1540A /* String+util.swift in Sources */,
 				8ADEF9011E71597200903F2B /* YYLoadProgressView.swift in Sources */,
 				8A4897C81E6695EE0049B94B /* AppDelegate.swift in Sources */,
